@@ -95,7 +95,7 @@ class Detector:
         self.model = load_model(args.detector_config, args.detector_model_path, device='cuda:0')
         self.cache_dir = args.cache_dir
         self.args = args
-        self.nlp = spacy.load("en_core_web_md")
+        self.nlp = spacy.load("en_core_web_lg")
         
     def detect_objects(self, sample: Dict):
         img_path = sample['img_path']

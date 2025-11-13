@@ -114,7 +114,7 @@ class Questioner:
         openai.api_base = args.api_base
         self.args = args
     
-        self.nlp = spacy.load("en_core_web_sm")
+        self.nlp = spacy.load("en_core_web_lg")
         
     def generate_questions(self, sample: Dict):
         sentences = sample['split_sents']
